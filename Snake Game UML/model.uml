@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_a55-AAadEeallbPcS_hhtg" name="RootElement" visibility="public">
   <packagedElement xmi:type="uml:Class" xmi:id="_DSlcgAafEeallbPcS_hhtg" name="SnakeGame"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="__A7c0AccEea00MJXLWbM-A" name="KeyboardManager"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="__A7c0AccEea00MJXLWbM-A" name="KeyboardManager">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_AelXgAcmEeap1ONr2zxr4A" name="keyPressQueue[]" type="_4cTjIAclEeap1ONr2zxr4A"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_B7-RoAcdEea00MJXLWbM-A" visibility="public" memberEnd="_B8nx4AcdEea00MJXLWbM-A _B8oY8AcdEea00MJXLWbM-A">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B8At4AcdEea00MJXLWbM-A" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_B8BU8AcdEea00MJXLWbM-A" key="nature" value="UML_Nature"/>
@@ -10,11 +12,46 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_B8oY8AcdEea00MJXLWbM-A" type="_DSlcgAafEeallbPcS_hhtg" association="_B7-RoAcdEea00MJXLWbM-A"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_n39OwAcfEea00MJXLWbM-A" name="Snake"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_pwKtkAcfEea00MJXLWbM-A" memberEnd="_pwL7sQcfEea00MJXLWbM-A _pwMiwAcfEea00MJXLWbM-A">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pwLUoAcfEea00MJXLWbM-A" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pwL7sAcfEea00MJXLWbM-A" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_pwMiwAcfEea00MJXLWbM-A" name="snakegame" type="_DSlcgAafEeallbPcS_hhtg" association="_pwKtkAcfEea00MJXLWbM-A"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_pwL7sQcfEea00MJXLWbM-A" name="snake" type="_n39OwAcfEea00MJXLWbM-A" association="_pwKtkAcfEea00MJXLWbM-A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_yJBHgAciEeap1ONr2zxr4A" name="SnakeScene" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_77VEMAckEeap1ONr2zxr4A" name="readyForNextScene">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_1PfwQAciEeap1ONr2zxr4A" name="TitleScene">
+    <generalization xmi:type="uml:Generalization" xmi:id="_NNy8cAcjEeap1ONr2zxr4A" general="_yJBHgAciEeap1ONr2zxr4A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ahhcUAcjEeap1ONr2zxr4A" name="GameScene">
+    <generalization xmi:type="uml:Generalization" xmi:id="_bjw8cAcjEeap1ONr2zxr4A" general="_yJBHgAciEeap1ONr2zxr4A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_e_MhgAcjEeap1ONr2zxr4A" name="HighScoreScene">
+    <generalization xmi:type="uml:Generalization" xmi:id="_gp5IwAcjEeap1ONr2zxr4A" general="_yJBHgAciEeap1ONr2zxr4A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_5RMOoAcjEeap1ONr2zxr4A" memberEnd="_5RYb4AcjEeap1ONr2zxr4A _5RZC8AcjEeap1ONr2zxr4A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5ROD0AcjEeap1ONr2zxr4A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5ROD0QcjEeap1ONr2zxr4A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5RZC8AcjEeap1ONr2zxr4A" name="snake" type="_n39OwAcfEea00MJXLWbM-A" association="_5RMOoAcjEeap1ONr2zxr4A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5RYb4AcjEeap1ONr2zxr4A" name="gamescene" type="_ahhcUAcjEeap1ONr2zxr4A" association="_5RMOoAcjEeap1ONr2zxr4A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_EaLVQAckEeap1ONr2zxr4A" memberEnd="_EaMjYAckEeap1ONr2zxr4A _EaMjYQckEeap1ONr2zxr4A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EaL8UAckEeap1ONr2zxr4A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EaL8UQckEeap1ONr2zxr4A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EaMjYQckEeap1ONr2zxr4A" name="keyboardmanager" type="__A7c0AccEea00MJXLWbM-A" association="_EaLVQAckEeap1ONr2zxr4A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EaMjYAckEeap1ONr2zxr4A" name="snakescene" type="_yJBHgAciEeap1ONr2zxr4A" association="_EaLVQAckEeap1ONr2zxr4A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PpVVUAckEeap1ONr2zxr4A" memberEnd="_PpWjcQckEeap1ONr2zxr4A _PpWjcgckEeap1ONr2zxr4A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PpV8YAckEeap1ONr2zxr4A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PpWjcAckEeap1ONr2zxr4A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_PpWjcgckEeap1ONr2zxr4A" name="snakegame" type="_DSlcgAafEeallbPcS_hhtg" association="_PpVVUAckEeap1ONr2zxr4A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_PpWjcQckEeap1ONr2zxr4A" name="snakescene" type="_yJBHgAciEeap1ONr2zxr4A" association="_PpVVUAckEeap1ONr2zxr4A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4cTjIAclEeap1ONr2zxr4A" name="java.awt.event.KeyEvent"/>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1MyvoAckEeap1ONr2zxr4A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1M1L4AckEeap1ONr2zxr4A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
 </uml:Model>
