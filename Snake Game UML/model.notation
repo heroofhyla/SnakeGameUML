@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <notation:Diagram xmi:id="_a6_jIAadEeallbPcS_hhtg" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_DSumcAafEeallbPcS_hhtg" type="2008">
+      <children xmi:type="notation:DecorationNode" xmi:id="_DSxCsAafEeallbPcS_hhtg" type="5029"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_DSxCsQafEeallbPcS_hhtg" type="8510">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_DSxCsgafEeallbPcS_hhtg" y="5"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_DSxpwAafEeallbPcS_hhtg" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_DSxpwQafEeallbPcS_hhtg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_DSxpwgafEeallbPcS_hhtg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_DSxpwwafEeallbPcS_hhtg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DSxpxAafEeallbPcS_hhtg"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_DSxpxQafEeallbPcS_hhtg" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_DSxpxgafEeallbPcS_hhtg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_DSxpxwafEeallbPcS_hhtg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_DSxpyAafEeallbPcS_hhtg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DSxpyQafEeallbPcS_hhtg"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_DSxpygafEeallbPcS_hhtg" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_DSxpywafEeallbPcS_hhtg"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_DSxpzAafEeallbPcS_hhtg"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_DSxpzQafEeallbPcS_hhtg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DSxpzgafEeallbPcS_hhtg"/>
+      </children>
+      <element xmi:type="uml:Class" href="model.uml#_DSlcgAafEeallbPcS_hhtg"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DSumcQafEeallbPcS_hhtg" x="175" y="113"/>
+    </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_a6_jIQadEeallbPcS_hhtg" name="diagram_compatibility_version" stringValue="1.1.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_a6_jIgadEeallbPcS_hhtg"/>
     <styles xmi:type="style:PapyrusViewStyle" xmi:id="_a6_jIwadEeallbPcS_hhtg">
