@@ -37,8 +37,11 @@
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EaL8UAckEeap1ONr2zxr4A" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EaL8UQckEeap1ONr2zxr4A" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_EaMjYQckEeap1ONr2zxr4A" name="keyboardmanager" type="__A7c0AccEea00MJXLWbM-A" association="_EaLVQAckEeap1ONr2zxr4A"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_EaMjYAckEeap1ONr2zxr4A" name="snakescene" type="_yJBHgAciEeap1ONr2zxr4A" association="_EaLVQAckEeap1ONr2zxr4A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EaMjYQckEeap1ONr2zxr4A" name="keyboardmanager" type="__A7c0AccEea00MJXLWbM-A" aggregation="shared" association="_EaLVQAckEeap1ONr2zxr4A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EaMjYAckEeap1ONr2zxr4A" name="snakescene" type="_yJBHgAciEeap1ONr2zxr4A" association="_EaLVQAckEeap1ONr2zxr4A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C8xY8AdtEeax684fUTgquQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C8570AdtEeax684fUTgquQ" value="*"/>
+    </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_PpVVUAckEeap1ONr2zxr4A" memberEnd="_PpWjcQckEeap1ONr2zxr4A _PpWjcgckEeap1ONr2zxr4A">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PpV8YAckEeap1ONr2zxr4A" source="org.eclipse.papyrus">
