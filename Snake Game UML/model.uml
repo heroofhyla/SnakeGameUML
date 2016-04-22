@@ -2,7 +2,7 @@
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_a55-AAadEeallbPcS_hhtg" name="RootElement" visibility="public">
   <packagedElement xmi:type="uml:Class" xmi:id="_DSlcgAafEeallbPcS_hhtg" name="SnakeGame"/>
   <packagedElement xmi:type="uml:Class" xmi:id="__A7c0AccEea00MJXLWbM-A" name="KeyboardManager"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_B7-RoAcdEea00MJXLWbM-A" name="Owns" visibility="public" memberEnd="_B8nx4AcdEea00MJXLWbM-A _B8oY8AcdEea00MJXLWbM-A">
+  <packagedElement xmi:type="uml:Association" xmi:id="_B7-RoAcdEea00MJXLWbM-A" visibility="public" memberEnd="_B8nx4AcdEea00MJXLWbM-A _B8oY8AcdEea00MJXLWbM-A">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B8At4AcdEea00MJXLWbM-A" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_B8BU8AcdEea00MJXLWbM-A" key="nature" value="UML_Nature"/>
     </eAnnotations>
@@ -20,14 +20,14 @@
   <packagedElement xmi:type="uml:Class" xmi:id="_e_MhgAcjEeap1ONr2zxr4A" name="HighScoreScene">
     <generalization xmi:type="uml:Generalization" xmi:id="_gp5IwAcjEeap1ONr2zxr4A" general="_yJBHgAciEeap1ONr2zxr4A"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_5RMOoAcjEeap1ONr2zxr4A" name="Tracks position" memberEnd="_5RYb4AcjEeap1ONr2zxr4A _5RZC8AcjEeap1ONr2zxr4A">
+  <packagedElement xmi:type="uml:Association" xmi:id="_5RMOoAcjEeap1ONr2zxr4A" memberEnd="_5RYb4AcjEeap1ONr2zxr4A _5RZC8AcjEeap1ONr2zxr4A">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5ROD0AcjEeap1ONr2zxr4A" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5ROD0QcjEeap1ONr2zxr4A" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_5RZC8AcjEeap1ONr2zxr4A" name="snake" type="_n39OwAcfEea00MJXLWbM-A" association="_5RMOoAcjEeap1ONr2zxr4A"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_5RYb4AcjEeap1ONr2zxr4A" name="gamescene" type="_ahhcUAcjEeap1ONr2zxr4A" association="_5RMOoAcjEeap1ONr2zxr4A"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_EaLVQAckEeap1ONr2zxr4A" name="Processes input" memberEnd="_EaMjYAckEeap1ONr2zxr4A _EaMjYQckEeap1ONr2zxr4A">
+  <packagedElement xmi:type="uml:Association" xmi:id="_EaLVQAckEeap1ONr2zxr4A" memberEnd="_EaMjYAckEeap1ONr2zxr4A _EaMjYQckEeap1ONr2zxr4A">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EaL8UAckEeap1ONr2zxr4A" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EaL8UQckEeap1ONr2zxr4A" key="nature" value="UML_Nature"/>
     </eAnnotations>
@@ -37,7 +37,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C8570AdtEeax684fUTgquQ" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_PpVVUAckEeap1ONr2zxr4A" name="Controls tick rate and switches scenes" memberEnd="_PpWjcQckEeap1ONr2zxr4A _PpWjcgckEeap1ONr2zxr4A">
+  <packagedElement xmi:type="uml:Association" xmi:id="_PpVVUAckEeap1ONr2zxr4A" memberEnd="_PpWjcQckEeap1ONr2zxr4A _PpWjcgckEeap1ONr2zxr4A">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PpV8YAckEeap1ONr2zxr4A" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PpWjcAckEeap1ONr2zxr4A" key="nature" value="UML_Nature"/>
     </eAnnotations>
@@ -45,7 +45,7 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_PpWjcQckEeap1ONr2zxr4A" name="snakescene" type="_yJBHgAciEeap1ONr2zxr4A" association="_PpVVUAckEeap1ONr2zxr4A"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_ulCRgAdxEeaOALSj-ERaiQ" name="SnakeSegment"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_xd8YUAdxEeaOALSj-ERaiQ" name="Composed" memberEnd="_xd9mcQdxEeaOALSj-ERaiQ _xd9mcgdxEeaOALSj-ERaiQ">
+  <packagedElement xmi:type="uml:Association" xmi:id="_xd8YUAdxEeaOALSj-ERaiQ" memberEnd="_xd9mcQdxEeaOALSj-ERaiQ _xd9mcgdxEeaOALSj-ERaiQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xd8_YAdxEeaOALSj-ERaiQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xd9mcAdxEeaOALSj-ERaiQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
@@ -56,14 +56,14 @@
     </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_RzNPcAdyEeaOALSj-ERaiQ" name="GUI"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_eZTNQAdyEeaOALSj-ERaiQ" name="Controls redraw rate" memberEnd="_eZT0UgdyEeaOALSj-ERaiQ _eZWQkAdyEeaOALSj-ERaiQ">
+  <packagedElement xmi:type="uml:Association" xmi:id="_eZTNQAdyEeaOALSj-ERaiQ" memberEnd="_eZT0UgdyEeaOALSj-ERaiQ _eZWQkAdyEeaOALSj-ERaiQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eZT0UAdyEeaOALSj-ERaiQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eZT0UQdyEeaOALSj-ERaiQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_eZWQkAdyEeaOALSj-ERaiQ" name="gui" type="_RzNPcAdyEeaOALSj-ERaiQ" association="_eZTNQAdyEeaOALSj-ERaiQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_eZT0UgdyEeaOALSj-ERaiQ" name="snakegame" type="_DSlcgAafEeallbPcS_hhtg" association="_eZTNQAdyEeaOALSj-ERaiQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_R0sV0Ad1EeaOALSj-ERaiQ" name="Listens for KeyEvents" memberEnd="_R0tj8gd1EeaOALSj-ERaiQ _R0uLAAd1EeaOALSj-ERaiQ">
+  <packagedElement xmi:type="uml:Association" xmi:id="_R0sV0Ad1EeaOALSj-ERaiQ" memberEnd="_R0tj8gd1EeaOALSj-ERaiQ _R0uLAAd1EeaOALSj-ERaiQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R0tj8Ad1EeaOALSj-ERaiQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_R0tj8Qd1EeaOALSj-ERaiQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
