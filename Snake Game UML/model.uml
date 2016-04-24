@@ -141,6 +141,34 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_h4yWUQj7EeaXV72coUMLcQ" name="gui" type="_RzNPcAdyEeaOALSj-ERaiQ" association="_h4xvQAj7EeaXV72coUMLcQ"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_yU07kApnEeauweGyrNDlnA" name="Player">
+    <generalization xmi:type="uml:Generalization" xmi:id="_TkXXsApqEeauweGyrNDlnA" general="_RhObQApqEeauweGyrNDlnA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_4wKK0ApoEeauweGyrNDlnA" name="Play Game">
+    <extend xmi:type="uml:Extend" xmi:id="_Ht3OUAprEeauweGyrNDlnA" extendedCase="_GVGroAprEeauweGyrNDlnA" extensionLocation="_Ht31YAprEeauweGyrNDlnA"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_6ktRoApoEeauweGyrNDlnA" name="ExtensionPoint1"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_enUHwApqEeauweGyrNDlnA" name="ExtensionPoint2"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="__FD3YApoEeauweGyrNDlnA" name="High Scores List">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_CEy-8AppEeauweGyrNDlnA" name="ExtensionPoint1"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_eBZXQApqEeauweGyrNDlnA" name="ExtensionPoint2"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_EI_rUAppEeauweGyrNDlnA" name="Exit Game">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_GWFN8AppEeauweGyrNDlnA" name="ExtensionPoint1"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_fbNp4ApqEeauweGyrNDlnA" name="ExtensionPoint2"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_PncPIApqEeauweGyrNDlnA" name="Key Press">
+    <extend xmi:type="uml:Extend" xmi:id="_eBYwMApqEeauweGyrNDlnA" extendedCase="__FD3YApoEeauweGyrNDlnA" extensionLocation="_eBZXQApqEeauweGyrNDlnA"/>
+    <extend xmi:type="uml:Extend" xmi:id="_enTgsApqEeauweGyrNDlnA" extendedCase="_4wKK0ApoEeauweGyrNDlnA" extensionLocation="_enUHwApqEeauweGyrNDlnA"/>
+    <extend xmi:type="uml:Extend" xmi:id="_fbNC0ApqEeauweGyrNDlnA" extendedCase="_EI_rUAppEeauweGyrNDlnA" extensionLocation="_fbNp4ApqEeauweGyrNDlnA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_RhObQApqEeauweGyrNDlnA" name="Title Screen"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_ZKzbwApqEeauweGyrNDlnA" name="Correct Key Pressed?" client="_RhObQApqEeauweGyrNDlnA" supplier="_PncPIApqEeauweGyrNDlnA"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_GVGroAprEeauweGyrNDlnA" name="High Score?">
+    <generalization xmi:type="uml:Generalization" xmi:id="_RL52EAprEeauweGyrNDlnA" general="_EI_rUAppEeauweGyrNDlnA"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Ht31YAprEeauweGyrNDlnA" name="ExtensionPoint1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_JExW4AprEeauweGyrNDlnA" name="Pulls High Scores from here if the player did well enough" client="__FD3YApoEeauweGyrNDlnA" supplier="_GVGroAprEeauweGyrNDlnA"/>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1MyvoAckEeap1ONr2zxr4A">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1M1L4AckEeap1ONr2zxr4A" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
