@@ -163,12 +163,12 @@
     <extend xmi:type="uml:Extend" xmi:id="_fbNC0ApqEeauweGyrNDlnA" extendedCase="_EI_rUAppEeauweGyrNDlnA" extensionLocation="_fbNp4ApqEeauweGyrNDlnA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_RhObQApqEeauweGyrNDlnA" name="Title Screen"/>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_ZKzbwApqEeauweGyrNDlnA" name="Correct Key Pressed?" client="_RhObQApqEeauweGyrNDlnA" supplier="_PncPIApqEeauweGyrNDlnA"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_GVGroAprEeauweGyrNDlnA" name="High Score?">
     <generalization xmi:type="uml:Generalization" xmi:id="_RL52EAprEeauweGyrNDlnA" general="_EI_rUAppEeauweGyrNDlnA"/>
     <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Ht31YAprEeauweGyrNDlnA" name="ExtensionPoint1"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_JExW4AprEeauweGyrNDlnA" name="Pulls High Scores from here if the player did well enough" client="__FD3YApoEeauweGyrNDlnA" supplier="_GVGroAprEeauweGyrNDlnA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_taHtYAptEeauweGyrNDlnA" name="Correct Key is pressed" client="_RhObQApqEeauweGyrNDlnA" supplier="_PncPIApqEeauweGyrNDlnA"/>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1MyvoAckEeap1ONr2zxr4A">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1M1L4AckEeap1ONr2zxr4A" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
