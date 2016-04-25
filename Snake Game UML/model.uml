@@ -39,10 +39,10 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_fLUK0Aj4EeaXV72coUMLcQ" name="SnakeGame">
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_4eREUAjNEeatuZmDhS5iAA" name="Direction">
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_5idh4AjxEea2kd8kfPlM5Q" name="North"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_6gsEsAjxEea2kd8kfPlM5Q" name="South"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7P_asAjxEea2kd8kfPlM5Q" name="East"/>
-      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7xQ7wAjxEea2kd8kfPlM5Q" name="West"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_5idh4AjxEea2kd8kfPlM5Q" name="NORTH"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_6gsEsAjxEea2kd8kfPlM5Q" name="SOUTH"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7P_asAjxEea2kd8kfPlM5Q" name="EAST"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7xQ7wAjxEea2kd8kfPlM5Q" name="WEST"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_e_MhgAcjEeap1ONr2zxr4A" name="HighScoreScene">
       <generalization xmi:type="uml:Generalization" xmi:id="_gp5IwAcjEeap1ONr2zxr4A" general="_yJBHgAciEeap1ONr2zxr4A"/>
@@ -64,7 +64,8 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_be380AjNEeatuZmDhS5iAA" name="readyForNextScene" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
       </ownedAttribute>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_5k2dcAjDEeatuZmDhS5iAA" name="tick">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_GmKNUAqVEeaGFqmqqjqgxQ" name="nextSceneType" visibility="private" type="_7EikQAqUEeaGFqmqqjqgxQ"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_5k2dcAjDEeatuZmDhS5iAA" name="tick" isAbstract="true">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_3etAwAj5EeaXV72coUMLcQ" name="g" type="_khwOkAj5EeaXV72coUMLcQ"/>
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_J83HMApEEeaZOd4s8U39og" name="key" type="_Xpy6IAj4EeaXV72coUMLcQ"/>
       </ownedOperation>
@@ -84,6 +85,17 @@
       <ownedOperation xmi:type="uml:Operation" xmi:id="_5r2NwAj5EeaXV72coUMLcQ" name="draw">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_CF0JYAj6EeaXV72coUMLcQ" name="g" type="_khwOkAj5EeaXV72coUMLcQ"/>
       </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_id_zsAqREeaGFqmqqjqgxQ" name="getHeadX">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_rrfeAAqREeaGFqmqqjqgxQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_yDRfcAqREeaGFqmqqjqgxQ" name="getHeadY">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3O_WYAqREeaGFqmqqjqgxQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_6MWfYAqREeaGFqmqqjqgxQ" name="grow"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="__A7c0AccEea00MJXLWbM-A" name="KeyboardManager">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_UjP5YAjLEeatuZmDhS5iAA" name="keyPresses" visibility="private" type="_Xpy6IAj4EeaXV72coUMLcQ" isOrdered="true">
@@ -117,9 +129,23 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_ahhcUAcjEeap1ONr2zxr4A" name="GameScene">
       <generalization xmi:type="uml:Generalization" xmi:id="_bjw8cAcjEeap1ONr2zxr4A" general="_yJBHgAciEeap1ONr2zxr4A"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_5RZC8AcjEeap1ONr2zxr4A" name="snake" type="_n39OwAcfEea00MJXLWbM-A" association="_5RMOoAcjEeap1ONr2zxr4A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_LYRY0AqSEeaGFqmqqjqgxQ" name="foodX" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TSCKYAqSEeaGFqmqqjqgxQ" name="foodY" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_c_6IcAqTEeaGFqmqqjqgxQ" name="score" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_LrzosAj5EeaXV72coUMLcQ" name="GameCanvas">
       <generalization xmi:type="uml:Generalization" xmi:id="_Nh5noAj5EeaXV72coUMLcQ" general="__Eyd0Aj4EeaXV72coUMLcQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_7EikQAqUEeaGFqmqqjqgxQ" name="Scenes">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_AOA_gAqVEeaGFqmqqjqgxQ" name="TITLE"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_BgG5gAqVEeaGFqmqqjqgxQ" name="GAME"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_B-GdEAqVEeaGFqmqqjqgxQ" name="HIGHSCORE"/>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_DKHUcAj5EeaXV72coUMLcQ" name="Swing">
@@ -141,34 +167,6 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_h4yWUQj7EeaXV72coUMLcQ" name="gui" type="_RzNPcAdyEeaOALSj-ERaiQ" association="_h4xvQAj7EeaXV72coUMLcQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_yU07kApnEeauweGyrNDlnA" name="Player">
-    <generalization xmi:type="uml:Generalization" xmi:id="_TkXXsApqEeauweGyrNDlnA" general="_RhObQApqEeauweGyrNDlnA"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_4wKK0ApoEeauweGyrNDlnA" name="Play Game">
-    <extend xmi:type="uml:Extend" xmi:id="_Ht3OUAprEeauweGyrNDlnA" extendedCase="_GVGroAprEeauweGyrNDlnA" extensionLocation="_Ht31YAprEeauweGyrNDlnA"/>
-    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_6ktRoApoEeauweGyrNDlnA" name="ExtensionPoint1"/>
-    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_enUHwApqEeauweGyrNDlnA" name="ExtensionPoint2"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="__FD3YApoEeauweGyrNDlnA" name="High Scores List">
-    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_CEy-8AppEeauweGyrNDlnA" name="ExtensionPoint1"/>
-    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_eBZXQApqEeauweGyrNDlnA" name="ExtensionPoint2"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_EI_rUAppEeauweGyrNDlnA" name="Exit Game">
-    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_GWFN8AppEeauweGyrNDlnA" name="ExtensionPoint1"/>
-    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_fbNp4ApqEeauweGyrNDlnA" name="ExtensionPoint2"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_PncPIApqEeauweGyrNDlnA" name="Key Press">
-    <extend xmi:type="uml:Extend" xmi:id="_eBYwMApqEeauweGyrNDlnA" extendedCase="__FD3YApoEeauweGyrNDlnA" extensionLocation="_eBZXQApqEeauweGyrNDlnA"/>
-    <extend xmi:type="uml:Extend" xmi:id="_enTgsApqEeauweGyrNDlnA" extendedCase="_4wKK0ApoEeauweGyrNDlnA" extensionLocation="_enUHwApqEeauweGyrNDlnA"/>
-    <extend xmi:type="uml:Extend" xmi:id="_fbNC0ApqEeauweGyrNDlnA" extendedCase="_EI_rUAppEeauweGyrNDlnA" extensionLocation="_fbNp4ApqEeauweGyrNDlnA"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_RhObQApqEeauweGyrNDlnA" name="Title Screen"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_GVGroAprEeauweGyrNDlnA" name="High Score?">
-    <generalization xmi:type="uml:Generalization" xmi:id="_RL52EAprEeauweGyrNDlnA" general="_EI_rUAppEeauweGyrNDlnA"/>
-    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Ht31YAprEeauweGyrNDlnA" name="ExtensionPoint1"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_JExW4AprEeauweGyrNDlnA" name="Pulls High Scores from here if the player did well enough" client="__FD3YApoEeauweGyrNDlnA" supplier="_GVGroAprEeauweGyrNDlnA"/>
-  <packagedElement xmi:type="uml:Usage" xmi:id="_taHtYAptEeauweGyrNDlnA" name="Correct Key is pressed" client="_RhObQApqEeauweGyrNDlnA" supplier="_PncPIApqEeauweGyrNDlnA"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_GwMS4ApwEeaGFqmqqjqgxQ" name="Snake Game">
     <packagedElement xmi:type="uml:UseCase" xmi:id="_JQg6kApwEeaGFqmqqjqgxQ" name="Play">
       <include xmi:type="uml:Include" xmi:id="_U5D1kApxEeaGFqmqqjqgxQ" addition="_NjImUApwEeaGFqmqqjqgxQ"/>
